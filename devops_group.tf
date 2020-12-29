@@ -13,3 +13,6 @@ resource "aws_iam_group_membership" "devops" {
   group = aws_iam_group.devops_group.name
 }
 
+
+# iam group에 대한 policy도 생성이 가능하다
+# "aws_iam_group_policy" 리소스로 생성.
